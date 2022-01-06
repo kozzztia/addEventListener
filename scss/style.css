@@ -54,6 +54,8 @@
     margin: 3px;
     background: #fff;
 
+    cursor: pointer;
+
 }
 .space{
     width: 200px;

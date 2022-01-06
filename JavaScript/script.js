@@ -11,10 +11,19 @@ let run = function (max) {
 text.oninput = function (event) {
   for (let i = 0; i < keys.length; i++) {
     if (keys[i].innerHTML == event.data) {
-      keys[i].style.boxShadow = `0 0 15px rgb(${run(255)},${run(255)},${run(255)})`;
+      keys[i].style.boxShadow = `0 0 20px rgb(${run(255)},${run(255)},${run(255)})`;
     } else {
       keys[i].style.boxShadow = 'none';
     }
   }
 }
 
+for (let i = 0; i < keys.length; i++) {
+  keys[i].addEventListener('click', function (event) {
+    keys.forEach(function (key) {
+      key.style.boxShadow = 'none';
+    })
+    text.value += keys[i].innerHTML;
+    keys[i].style.boxShadow = `0 0 20px rgb(${run(255)},${run(255)},${run(255)})`;
+  })
+}
