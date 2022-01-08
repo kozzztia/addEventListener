@@ -8,7 +8,7 @@
     color: #fff;
 }
 .div {
-    width: 500px;
+    max-width: 500px;
     min-height: 500px;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -19,7 +19,7 @@
     padding: inherit;
 }
 .monitor{
-    width: 400px;
+    max-width: 400px;
     height: 200px;
     margin: 20px auto;
     text-align: left;
@@ -36,7 +36,7 @@
 }
 .out {
     border: 1px solid #fff;
-    width: 400px;
+    width: 100%;
     min-height: 200px;
     margin: 20px auto;
     background: rgb(20, 20, 20);
